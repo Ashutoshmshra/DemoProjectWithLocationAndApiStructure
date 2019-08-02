@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NHaasGroteskDSPro-65Md.ttf">
+            <string>NHaasGroteskDSPro-65Md</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UpdateSplashCollectionViewCell" customModule="MountSinai" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="UpdateSplashCollectionViewCell" id="gTV-IL-0wX" customClass="UpdateSplashCollectionViewCell" customModule="MountSinai" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="282" height="153"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="282" height="153"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rdk-7I-mDp">
+                        <rect key="frame" x="0.0" y="0.0" width="282" height="153"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Good Reads" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.25" translatesAutoresizingMaskIntoConstraints="NO" id="RqK-Vt-QHz">
+                                <rect key="frame" x="86" y="93" width="110" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="110" id="jPg-C9-DTF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="NHaasGroteskDSPro-65Md" family="Neue Haas Grotesk Display Pro" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="book_active" translatesAutoresizingMaskIntoConstraints="NO" id="Fqw-YD-ZAg">
+                                <rect key="frame" x="112.5" y="48" width="57" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33" id="0BR-cj-p9i"/>
+                                    <constraint firstAttribute="width" constant="57" id="HNW-Jv-UQg"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.49121378100000002" green="0.18098710339999999" blue="0.8722234029" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Fqw-YD-ZAg" firstAttribute="centerX" secondItem="rdk-7I-mDp" secondAttribute="centerX" id="0GU-3S-1pl"/>
+                            <constraint firstItem="RqK-Vt-QHz" firstAttribute="centerX" secondItem="rdk-7I-mDp" secondAttribute="centerX" id="V3I-QH-P0I"/>
+                            <constraint firstAttribute="bottom" secondItem="RqK-Vt-QHz" secondAttribute="bottom" constant="43" id="c9w-Bg-I3h"/>
+                            <constraint firstItem="RqK-Vt-QHz" firstAttribute="top" secondItem="Fqw-YD-ZAg" secondAttribute="bottom" constant="12" id="iHU-5j-vDW"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="rdk-7I-mDp" secondAttribute="trailing" id="5gF-N7-2kc"/>
+                <constraint firstItem="rdk-7I-mDp" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="6wp-qa-vuY"/>
+                <constraint firstAttribute="bottom" secondItem="rdk-7I-mDp" secondAttribute="bottom" id="H5J-cT-VbX"/>
+                <constraint firstItem="rdk-7I-mDp" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="egJ-NI-Alw"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="282" height="153"/>
+            <connections>
+                <outlet property="cellImageLabel" destination="Fqw-YD-ZAg" id="VCR-wK-WDl"/>
+                <outlet property="cellTitleLabel" destination="RqK-Vt-QHz" id="VLI-ng-5C8"/>
+                <outlet property="supportView" destination="rdk-7I-mDp" id="iVL-2i-ruu"/>
+            </connections>
+            <point key="canvasLocation" x="-16" y="29.23538230884558"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="book_active" width="55" height="36"/>
+    </resources>
+</document>
